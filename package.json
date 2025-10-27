@@ -7,9 +7,12 @@
   "type": "commonjs",
   "main": "Ung_dung.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --inspect Ung_dung.js",
+    "debug": "nodemon --inspect Ung_dung.js"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
   }
 }

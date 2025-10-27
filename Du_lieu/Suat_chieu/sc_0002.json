@@ -1,0 +1,11 @@
+{
+  "_id": "sc_00002",
+  "ca_chieu": 2,
+  "phim": {
+    "id": "phim_002",
+    "ten_phim": "Cô Ba Sài Gòn"
+  },
+  "phong_chieu_id": "pc_0002",
+  "ngay_chieu": "2025-10-27",
+  "gia_ve": 75000
+}

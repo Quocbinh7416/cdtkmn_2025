@@ -1,0 +1,11 @@
+{
+  "_id": "sc_00003",
+  "ca_chieu": 3,
+  "phim": {
+    "id": "phim_003",
+    "ten_phim": "Tháng Năm Rực Rỡ"
+  },
+  "phong_chieu_id": "pc_0003",
+  "ngay_chieu": "2025-10-28",
+  "gia_ve": 70000
+}

@@ -21,18 +21,18 @@ class XL_KHACH {
             Chuoi_HTML += `
                 <div class='col-md-4 mb-4'>
                     <div class='card shadow-sm border-0' style='transition: transform 0.3s; border-radius: 10px;'>
-                        <img src='${Phim.hinh_anh}' class='card-img-top' alt='${Phim.ten_phim}' style='height: 300px; object-fit: cover; border-radius: 10px 10px 0 0;'>
+                        <img src='${Phim.Hinh_anh}' class='card-img-top' alt='${Phim.Ten_phim}' style='height: 300px; object-fit: cover; border-radius: 10px 10px 0 0;'>
                         <div class='card-body' style='padding: 20px;'>
-                            <h5 class='card-title' style='color: #2c3e50; font-weight: bold;'>${Phim.ten_phim}</h5>
-                            <p class='card-text' style='color: #7f8c8d; font-size: 14px;'>${Phim.mo_ta}</p>
-                            <p class='card-text' style='color: #e74c3c; font-weight: 600;'>${Phim.thoi_luong} phút</p>
+                            <h5 class='card-title' style='color: #2c3e50; font-weight: bold;'>${Phim.Ten_phim}</h5>
+                            <p class='card-text' style='color: #7f8c8d; font-size: 14px;'>${Phim.Mo_ta}</p>
+                            <p class='card-text' style='color: #e74c3c; font-weight: 600;'>${Phim.Thoi_luong} phút</p>
                         </div>
                     </div>
                 </div>
             `;
         });
 
-        Chuoi_HTML += `</div></div>`;
+        Chuoi_HTML += `</div></div><div style='margin-bottom: 100px;'></div>`;
         return Chuoi_HTML;
     }
 }

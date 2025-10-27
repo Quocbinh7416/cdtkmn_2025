@@ -41,9 +41,9 @@ class XL_GIAO_DIEN {
                 <div class='col-md-4'>
                     <div class='card mb-4' style="border: 1px solid #007bff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                         <div class='card-body' style="background-color: #f8f9fa; padding: 20px;">
-                            <h5 class='card-title' style="color: #007bff; font-weight: bold;">${Rap.ten_rap}</h5>
-                            <p class='card-text' style="margin-bottom: 10px;"><strong>Địa chỉ:</strong> ${Rap.dia_chi}</p>
-                            <p class='card-text' style="margin-bottom: 0;"><strong>Số phòng chiếu:</strong> ${Rap.danh_sach_phong.length}</p>
+                            <h5 class='card-title' style="color: #007bff; font-weight: bold;">${Rap.Ten_rap}</h5>
+                            <p class='card-text' style="margin-bottom: 10px;"><strong>Địa chỉ:</strong> ${Rap.Dia_chi}</p>
+                            <p class='card-text' style="margin-bottom: 0;"><strong>Số phòng chiếu:</strong> ${Rap.Danh_sach_Phong.length}</p>
                         </div>
                     </div>
                 </div>

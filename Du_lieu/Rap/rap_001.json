@@ -1,6 +1,6 @@
 {
-  "_id": "rap_001",
-  "ten_rap": "Rạp Chiếu Phim X",
-  "dia_chi": "123 Đường Lớn, Quận 1, TP.HCM",
-  "danh_sach_phong": ["pc_0001", "pc_0002", "pc_0003", "pc_0004"]
+  "Ma_rap": "rap_001",
+  "Ten_rap": "Rạp Chiếu Phim X",
+  "Dia_chi": "123 Đường Lớn, Quận 1, TP.HCM",
+  "Danh_sach_Phong": ["pc_0001", "pc_0002", "pc_0003", "pc_0004"]
 }

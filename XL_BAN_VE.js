@@ -36,13 +36,13 @@ class XL_BAN_VE {
         FS.mkdirSync(Thu_muc_Ve, { recursive: true });
       }
       var Ve = {
-        _id: `ve_${Suat_chieu_ID}_${Date.now()}`,
-        suat_chieu_id: Suat_chieu_ID,
-        ngay_mua: new Date().toISOString().split('T')[0],
-        thoi_gian_mua: new Date().toLocaleTimeString('vi-VN')
+        Ma_Ve: `ve_${Suat_chieu_ID}_${Date.now()}`,
+        Ma_suat_chieu: Suat_chieu_ID,
+        Ngay_mua: new Date().toISOString().split('T')[0],
+        Thoi_gian_Mua: new Date().toLocaleTimeString('vi-VN')
       };
       
-      var Ten_Tap_tin = `${Ve._id}.json`;
+      var Ten_Tap_tin = `${Ve.Ma_Ve}.json`;
       var Duong_dan = PATH.join(Thu_muc_Ve, Ten_Tap_tin);
       var Chuoi_JSON = JSON.stringify(Ve, null, 2);
       FS.writeFileSync(Duong_dan, Chuoi_JSON);
@@ -89,19 +89,19 @@ class XL_BAN_VE {
     
     DanhSachSuatChieu.forEach((SuatChieu) => {
       Chuoi_HTML += `<tr>
-                       <td style='font-weight: bold;'>${SuatChieu.phim.ten_phim}</td>
-                       <td>${SuatChieu.ten_phong || SuatChieu.phong_chieu_id}</td>
-                       <td>${SuatChieu.ngay_chieu || 'Chưa xác định'}</td>
+                       <td style='font-weight: bold;'>${SuatChieu.Phim.Ten_phim}</td>
+                       <td>${SuatChieu.ten_phong || SuatChieu.Ma_phong_chieu}</td>
+                       <td>${SuatChieu.Ngay_chieu || 'Chưa xác định'}</td>
                        <td>${SuatChieu.thoi_gian || 'Chưa xác định'}</td>
-                       <td style='color: #27ae60; font-weight: 600;'>${SuatChieu.gia_ve} VND</td>
+                       <td style='color: #27ae60; font-weight: 600;'>${SuatChieu.Gia_ve} VND</td>
                        <td style='color: #3498db; font-weight: 600;'>${SuatChieu.so_ve_da_ban || 0}/${SuatChieu.tong_so_ve || 0}</td>
-                       <td><form method='post' action='/BAN_VE' style='display:inline;'><input type='hidden' name='suat_chieu_id' value='${SuatChieu._id}'><button type='submit' class='btn btn-success btn-sm'>Bán Vé</button></form></td>
+                       <td><form method='post' action='/BAN_VE' style='display:inline;'><input type='hidden' name='suat_chieu_id' value='${SuatChieu.Ma_Suat_chieu}'><button type='submit' class='btn btn-success btn-sm'>Bán Vé</button></form></td>
                      </tr>`;
     });
     
     Chuoi_HTML += `</tbody></table>`;
 
-    Chuoi_HTML += `</div></div>`;
+    Chuoi_HTML += `</div></div><div style='margin-bottom: 100px;'></div>`;
     return Chuoi_HTML;
   }
 }

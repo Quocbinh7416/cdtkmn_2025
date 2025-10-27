@@ -1,7 +1,7 @@
 {
-  "_id": "phim_003",
-  "ten_phim": "Tháng Năm Rực Rỡ",
-  "mo_ta": "Phim thanh xuân về tuổi học trò.",
-  "thoi_luong": 95,
-  "hinh_anh": "/Media/Phim/thang_nam_ruc_ro.jpg"
+  "Ma_phim": "phim_003",
+  "Ten_phim": "Tháng Năm Rực Rỡ",
+  "Mo_ta": "Phim thanh xuân về tuổi học trò.",
+  "Thoi_luong": 95,
+  "Hinh_anh": "/Media/Phim/thang_nam_ruc_ro.jpg"
 }

@@ -19,18 +19,18 @@ class XL_SUAT_CHIEU {
       var Chuoi_JSON = FS.readFileSync(Duong_dan, "utf-8");
       var Suat_chieu = JSON.parse(Chuoi_JSON);
       
-      var Ca_chieu = Danh_sach_Ca_chieu.find(cc => cc.loai === Suat_chieu.ca_chieu);
+      var Ca_chieu = Danh_sach_Ca_chieu.find(cc => cc.Loai === Suat_chieu.Ca_chieu);
       if (Ca_chieu) {
-        Suat_chieu.thoi_gian = Ca_chieu.thoi_gian;
+        Suat_chieu.thoi_gian = Ca_chieu.Thoi_gian;
       }
       
-      var Phong_chieu = Danh_sach_Phong_chieu.find(pc => pc._id === Suat_chieu.phong_chieu_id);
+      var Phong_chieu = Danh_sach_Phong_chieu.find(pc => pc.Ma_Phong_chieu === Suat_chieu.Ma_phong_chieu);
       if (Phong_chieu) {
-        Suat_chieu.ten_phong = Phong_chieu.ten_phong;
-        Suat_chieu.tong_so_ve = Phong_chieu.so_ghe || 0;
+        Suat_chieu.ten_phong = Phong_chieu.Ten_Phong;
+        Suat_chieu.tong_so_ve = Phong_chieu.So_Ghe || 0;
       }
       
-      Suat_chieu.so_ve_da_ban = this.Dem_Ve_Da_Ban(Suat_chieu._id);
+      Suat_chieu.so_ve_da_ban = this.Dem_Ve_Da_Ban(Suat_chieu.Ma_Suat_chieu);
       Danh_sach.push(Suat_chieu);
     });
     
@@ -98,9 +98,9 @@ class XL_SUAT_CHIEU {
     
     Chuoi_Tra_cuu = removeAccents(Chuoi_Tra_cuu.toLowerCase());
     return Danh_sach_Suat_chieu.filter(Suat_chieu => 
-      removeAccents(Suat_chieu.phim.ten_phim.toLowerCase()).includes(Chuoi_Tra_cuu) || 
+      removeAccents(Suat_chieu.Phim.Ten_phim.toLowerCase()).includes(Chuoi_Tra_cuu) || 
       removeAccents((Suat_chieu.ten_phong || '').toLowerCase()).includes(Chuoi_Tra_cuu) ||
-      Suat_chieu.ngay_chieu.includes(Chuoi_Tra_cuu)
+      Suat_chieu.Ngay_chieu.includes(Chuoi_Tra_cuu)
     );
   }
 }

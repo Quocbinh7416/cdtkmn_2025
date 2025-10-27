@@ -1,11 +1,11 @@
 {
-  "_id": "sc_00001",
-  "ca_chieu": 1,
-  "phim": {
-    "id": "phim_001",
-    "ten_phim": "Đào, Phở và Piano"
+  "Ma_Suat_chieu": "sc_00001",
+  "Ca_chieu": 1,
+  "Phim": {
+    "Ma_phim": "phim_001",
+    "Ten_phim": "Đào, Phở và Piano"
   },
-  "phong_chieu_id": "pc_0001",
-  "ngay_chieu": "2025-10-27",
-  "gia_ve": 80000
+  "Ma_phong_chieu": "pc_0001",
+  "Ngay_chieu": "2025-10-27",
+  "Gia_ve": 80000
 }

@@ -27,8 +27,8 @@ class XL_PHIM {
         
         Chuoi_Tra_cuu = removeAccents(Chuoi_Tra_cuu.toLowerCase());
         return Danh_sach_Phim.filter(Phim => 
-            removeAccents(Phim.ten_phim.toLowerCase()).includes(Chuoi_Tra_cuu) || 
-            removeAccents(Phim.mo_ta.toLowerCase()).includes(Chuoi_Tra_cuu)
+            removeAccents(Phim.Ten_phim.toLowerCase()).includes(Chuoi_Tra_cuu) || 
+            removeAccents(Phim.Mo_ta.toLowerCase()).includes(Chuoi_Tra_cuu)
         );
     }
 

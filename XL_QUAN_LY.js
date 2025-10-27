@@ -35,7 +35,7 @@ class XL_QUAN_LY {
     var Thong_ke = {};
     
     Danh_sach_Ve.forEach(Ve => {
-      var Suat_chieu_ID = Ve.suat_chieu_id;
+      var Suat_chieu_ID = Ve.Ma_suat_chieu;
       if (!Thong_ke[Suat_chieu_ID]) {
         Thong_ke[Suat_chieu_ID] = 0;
       }
@@ -82,11 +82,11 @@ class XL_QUAN_LY {
     
     DanhSachSuatChieu.forEach((SuatChieu) => {
       Chuoi_HTML += `<tr>
-                       <td style='font-weight: bold;'>${SuatChieu.phim.ten_phim}</td>
-                       <td>${SuatChieu.ten_phong || SuatChieu.phong_chieu_id}</td>
-                       <td>${SuatChieu.ngay_chieu || 'Chưa xác định'}</td>
+                       <td style='font-weight: bold;'>${SuatChieu.Phim.Ten_phim}</td>
+                       <td>${SuatChieu.ten_phong || SuatChieu.Ma_phong_chieu}</td>
+                       <td>${SuatChieu.Ngay_chieu || 'Chưa xác định'}</td>
                        <td>${SuatChieu.thoi_gian || 'Chưa xác định'}</td>
-                       <td style='color: #27ae60; font-weight: 600;'>${SuatChieu.gia_ve} VND</td>
+                       <td style='color: #27ae60; font-weight: 600;'>${SuatChieu.Gia_ve} VND</td>
                        <td style='color: #3498db; font-weight: 600;'>${SuatChieu.so_ve_da_ban || 0}/${SuatChieu.tong_so_ve || 0}</td>
                      </tr>`;
     });
@@ -114,11 +114,11 @@ class XL_QUAN_LY {
                      <tbody>`;
     
     Object.entries(Thong_ke).forEach(([Suat_chieu_ID, So_ve]) => {
-      var SuatChieu = DanhSachSuatChieu.find(sc => sc._id === Suat_chieu_ID);
+      var SuatChieu = DanhSachSuatChieu.find(sc => sc.Ma_Suat_chieu === Suat_chieu_ID);
       if (SuatChieu) {
         Chuoi_HTML += `<tr>
-                         <td style='font-weight: bold;'>${SuatChieu.phim.ten_phim}</td>
-                         <td>${SuatChieu.ngay_chieu || 'Chưa xác định'}</td>
+                         <td style='font-weight: bold;'>${SuatChieu.Phim.Ten_phim}</td>
+                         <td>${SuatChieu.Ngay_chieu || 'Chưa xác định'}</td>
                          <td>${SuatChieu.thoi_gian || 'Chưa xác định'}</td>
                          <td style='color: #27ae60; font-weight: 600;'>${So_ve}</td>
                        </tr>`;
@@ -135,9 +135,9 @@ class XL_QUAN_LY {
     var Thong_ke_Phim = {};
     
     Danh_sach_Ve.forEach(Ve => {
-      var SuatChieu = DanhSachSuatChieu.find(sc => sc._id === Ve.suat_chieu_id);
+      var SuatChieu = DanhSachSuatChieu.find(sc => sc.Ma_Suat_chieu === Ve.Ma_suat_chieu);
       if (SuatChieu) {
-        var Ten_phim = SuatChieu.phim.ten_phim;
+        var Ten_phim = SuatChieu.Phim.Ten_phim;
         if (!Thong_ke_Phim[Ten_phim]) {
           Thong_ke_Phim[Ten_phim] = 0;
         }

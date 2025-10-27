@@ -1,5 +1,5 @@
 {
-  "_id": "pc_0003",
-  "ten_phong": "Phòng 3",
-  "so_ghe": 60
+  "Ma_Phong_chieu": "pc_0003",
+  "Ten_Phong": "Phòng 3",
+  "So_Ghe": 60
 }

@@ -1,7 +1,7 @@
 {
-  "_id": "phim_001",
-  "ten_phim": "Đào, Phở và Piano",
-  "mo_ta": "Bộ phim lịch sử về Hà Nội.",
-  "thoi_luong": 120,
-  "hinh_anh": "/Media/Phim/dao_pho_piano.jpg"
+  "Ma_phim": "phim_001",
+  "Ten_phim": "Đào, Phở và Piano",
+  "Mo_ta": "Bộ phim lịch sử về Hà Nội.",
+  "Thoi_luong": 120,
+  "Hinh_anh": "/Media/Phim/dao_pho_piano.jpg"
 }

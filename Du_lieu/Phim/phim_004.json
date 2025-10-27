@@ -1,7 +1,7 @@
 {
-  "_id": "phim_004",
-  "ten_phim": "Mắt Biếc",
-  "mo_ta": "Phim tình cảm dựa trên tiểu thuyết nổi tiếng.",
-  "thoi_luong": 117,
-  "hinh_anh": "/Media/Phim/mat_biec.jpg"
+  "Ma_phim": "phim_004",
+  "Ten_phim": "Mắt Biếc",
+  "Mo_ta": "Phim tình cảm dựa trên tiểu thuyết nổi tiếng.",
+  "Thoi_luong": 117,
+  "Hinh_anh": "/Media/Phim/mat_biec.jpg"
 }

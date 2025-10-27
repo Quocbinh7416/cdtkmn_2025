@@ -1,7 +1,7 @@
 {
-  "_id": "phim_002",
-  "ten_phim": "Cô Ba Sài Gòn",
-  "mo_ta": "Phim tình cảm về Sài Gòn xưa.",
-  "thoi_luong": 105,
-  "hinh_anh": "/Media/Phim/co_ba_sai_gon.jpg"
+  "Ma_phim": "phim_002",
+  "Ten_phim": "Cô Ba Sài Gòn",
+  "Mo_ta": "Phim tình cảm về Sài Gòn xưa.",
+  "Thoi_luong": 105,
+  "Hinh_anh": "/Media/Phim/co_ba_sai_gon.jpg"
 }
